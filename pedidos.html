@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="pedidos.js"></script>
+    <title>PEDIDOS</title>
+</head>
+<header>
+    <h1>SECCION DE PEDIDOS</h1>
+</header>
+<body>
+    <form>
+        <select name="nombre del producto" id="producto">
+          <option value="0">-- Selecciona --</option>
+          <option value="25">Pastel de Tres Leches (PASTEL 25$)</option>
+          <option value="30">Pastel de Chocolate (PASTEL 30$)</option>
+          <option value="28">Pastel de Frutas con Crema Chantilly (PASTEL 28$)</option>
+          <option value="27">Cheesecake (PASTEL 27$)</option>
+
+          <option value="12">Galletas con Chispas de Chocolate (GALLETAS 12$)</option>
+          <option value="10">Galletas de Mantequilla de Maní (GALLETAS 10$)</option>
+          <option value="11">Galletas Integrales con Avena y Pasas (GALLETAS 11$)</option>
+          <option value="15">Galletas Decoradas con Royal Icing (GALLETAS 15$)</option>
+
+          <option value="8">Crema Pastelera (CREMAS 8$)</option>
+          <option value="10">Ganache de Chocolate (CREMAS 10$)</option>
+          <option value="7">Crema Chantilly (CREMAS 7$)</option>
+          <option value="9">Crema de Queso (CREMAS 9$)</option>
+
+          <option value="5">Caramelos Artesanales (DULCES 5$)</option>
+          <option value="6">Paletas (DULCES 6$)</option>
+          <option value="14">Trufas de Chocolate (DULCES 14$)</option>
+          <option value="6">Malvaviscos Caseros (DULCES 6$)</option>
+        </select>
+
+        <input type="number" name="cantidad" placeholder="Cantidad" id="cantidad" value="1">
+        <br><input type="text" name="nombre" placeholder="Tu nombre" id="nombre">
+        <input type="email" name="correo" placeholder="Tu correo" id="correo">
+        <button onclick="calcularPrecio()">Calcular Precio</button>
+    </form>    
+    <nav>
+        <a href="index.html">Pagina de inicio</a>
+        <a href="pasteles.html">Pasteles</a>
+        <a href="galletas.html">Galletas</a>
+        <a href="cremas.html">Cremas</a>
+        <a href="confiteria.html">Confiteria</a>
+    </nav>
+    <footer>
+        <p>Visítanos en:</p>
+        <ol type="I">
+            <li>Calle del Cacao No. 112, Colonia Sabores, Ciudad Dulzura, CP 54321</li>
+            <li>Avenida de la Vainilla #45, Centro Delicias, Villa Pastel, CP 98765</li>
+        </ol><br>
+        <p>&regLa Casa del Pastel 2025</p>
+    </footer>  
+</body>
+</html>
