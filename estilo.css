@@ -10,7 +10,7 @@ header {
     background-color: #ffe0ec;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px dotted #ffb6c1;
+    border-bottom: 10px double #fcf4f7;
 }
 
 header h1 {
@@ -57,21 +57,26 @@ nav a {
     display: inline-block;
     margin: 10px;
 }
-
 nav a:hover {
     color: #a63a57;
     text-decoration: underline;
+    text-decoration-style: wavy;
 }
 
 nav img {
     margin: 10px auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+    box-shadow: 0 0 40px rgba(231, 52, 79, 0.5);
     width: 100%;
     max-width: 300px;
     display: block;
+    text-align: right;
+    background-color: #f5d7e8;
+    transition: transform 0.3s;
 }
-
+nav img:hover{
+    transform: scale(1.05);
+}
 .centrado {
     text-align: center;
     margin: 30px 0;
@@ -83,7 +88,7 @@ nav img {
     padding: 10px 20px;
     border-radius: 20px;
     color: #7c2c35;
-    text-decoration: none;
+    text-decoration-style:wavy;
     box-shadow: 2px 2px 5px #ffb6c1;
 }
 
@@ -92,7 +97,7 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 0.9em;
-    border-top: 5px dotted #ffc1cc;
+    border-top: 10px double #fcf4f7;
     color: #703942;
 }
 
@@ -142,10 +147,6 @@ footer ol {
     }
 }
 
-.centrado{
-    text-align: center;
-}
-
 /* TABLA*/
 
 .tabla-pasteles {
@@ -179,7 +180,7 @@ footer ol {
     box-shadow: 0 0 5px rgba(255, 200, 200, 0.5);
 }
 
-/* Estilo responsive */
+/* Estilo responsivo*/
 @media screen and (max-width: 768px) {
     .tabla-pasteles, 
     .tabla-pasteles thead, 
@@ -291,4 +292,19 @@ form button:hover {
     form button {
         font-size: 1em;
     }
+}
+
+.ig{
+    color: #a63a57;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.ig img{
+    margin-right: 8px;
+}
+.ig:hover{
+    color: blue;
 }

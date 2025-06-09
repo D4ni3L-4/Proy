@@ -4,6 +4,6 @@ function calcularPrecio() {
     var s=parseInt(a)*parseInt(b)
     var x=document.getElementById("nombre").value;
     var y=document.getElementById("correo").value;
-    alert("Hola "+x+", el coste es de: "+s+"$"+" el recibo le llegra a "+y);
+    alert("Hola "+x+", el coste es de: "+s+"$"+" el recibo le llegara a "+y);
     return(0);
 }
